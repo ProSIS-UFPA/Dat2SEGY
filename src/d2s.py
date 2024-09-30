@@ -9,7 +9,7 @@ Objetivo: Uma conversão mais automatizada de dados ".dat" para ".SGY" com o obj
 import os
 from obspy import read
 
-# FIles in .dat diretory
+# Files in .dat diretory
 input_directory = "diretory/.dat" # Change to path diretory input
 output_directory = "diretory/.SGY"  # change to path diretory output for save in .SGY
 
@@ -30,4 +30,5 @@ for filename in os.listdir(input_directory):
         # Save in SEG-Y format
         st.write(output_file, format="SEGY")
         print(f"Convertido: {filename} para {output_file}")
+        print(f"Todos os Diretos Reservados ao Laboratório de Processamento Sísmico da UFPA e ao Autor Wilson Weliton Oliveira de Souza")
 
